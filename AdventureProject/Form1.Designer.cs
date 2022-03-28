@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.outputLabel = new System.Windows.Forms.Label();
             this.option1Button = new System.Windows.Forms.Button();
             this.option2Button = new System.Windows.Forms.Button();
@@ -85,6 +86,7 @@
             this.Controls.Add(this.option2Button);
             this.Controls.Add(this.option1Button);
             this.Controls.Add(this.outputLabel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Adventure Game";
             ((System.ComponentModel.ISupportInitialize)(this.imageBox)).EndInit();
