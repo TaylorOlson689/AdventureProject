@@ -44,7 +44,7 @@
             // 
             // option1Button
             // 
-            this.option1Button.BackColor = System.Drawing.Color.GreenYellow;
+            this.option1Button.BackColor = System.Drawing.Color.Yellow;
             this.option1Button.Location = new System.Drawing.Point(63, 270);
             this.option1Button.Name = "option1Button";
             this.option1Button.Size = new System.Drawing.Size(477, 33);
@@ -55,7 +55,7 @@
             // 
             // option2Button
             // 
-            this.option2Button.BackColor = System.Drawing.Color.GreenYellow;
+            this.option2Button.BackColor = System.Drawing.Color.Green;
             this.option2Button.Location = new System.Drawing.Point(63, 321);
             this.option2Button.Name = "option2Button";
             this.option2Button.Size = new System.Drawing.Size(477, 33);
@@ -79,7 +79,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Snow;
+            this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(663, 382);
             this.Controls.Add(this.imageBox);
             this.Controls.Add(this.option2Button);

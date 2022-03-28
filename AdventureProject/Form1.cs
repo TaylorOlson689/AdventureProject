@@ -33,7 +33,7 @@ namespace AdventureProject
             {
                 page = 3;
             }
-            else if (page == 3)
+            else if (page == 2)
             {
                 page = 4;
             }
@@ -43,7 +43,23 @@ namespace AdventureProject
             }
             else if (page == 5)
             {
-                page = 99;
+                page = 6;
+            }
+            else if (page == 6)
+            {
+                page = 7;
+            }
+            else if (page == 7)
+            {
+                page = 8;
+            }
+            else if (page == 8)
+            {
+                page = 9;
+            }
+            else if (page == 99)
+            {
+                page = 1;
             }
 
             DisplayPage();
@@ -54,13 +70,28 @@ namespace AdventureProject
         {
             if (page == 1)
             {
-                page = 6;
+                page = 8;
+            }
+            else if (page == 8)
+            {
+                page = 9;
+            }
+            else if (page == 9)
+            {
+                page = 10;
             }
             else if (page == 6)
             {
                 page = 7;
             }
-          
+            else if (page == 7)
+            {
+                page = 99;
+            }
+            else if (page == 99)
+            {
+                page = 1;
+            }
 
             DisplayPage();
 
@@ -74,7 +105,6 @@ namespace AdventureProject
                     outputLabel.Text = "Welcome to the Stratford VIA/GO Train Station. Ready for an adventure? Which provider?";
                     option1Button.Text = "VIA Rail";
                     option2Button.Text = "GO Transit";
-
                     imageBox.Image = Properties.Resources.StratfordVIAStation;
                     break;
                 case 2:
@@ -85,7 +115,6 @@ namespace AdventureProject
                     imageBox.Image = Properties.Resources.StratfordVIATrain;
                     SoundPlayer player2 = new SoundPlayer(Properties.Resources.Horn);
                     player2.Play();
-
                     break;
                 case 3:
                     outputLabel.Text = "Which Class?";
@@ -93,16 +122,26 @@ namespace AdventureProject
                     option2Button.Text = "Economy";
                     break;
                 case 4:
-                    outputLabel.Text = "You made it to your destination. Return trip?";
-                    option1Button.Text = "Yes";
-                    option2Button.Text = "No";
+                    outputLabel.Text = "Enjoy the trip!";
+                    option1Button.Text = "";
+                    option2Button.Text = "";
                     break;
                 case 5:
-                    outputLabel.Text = "You made it!";
+                    outputLabel.Text = "Enjoy the trip!";
                     option1Button.Text = "";
                     option2Button.Text = "";
                     break;
                 case 6:
+                    outputLabel.Text = "You made it to your destination. Return trip?";
+                    option1Button.Text = "Yes";
+                    option2Button.Text = "No";
+                    break;
+                case 7:
+                    outputLabel.Text = "You made it!";
+                    option1Button.Text = "";
+                    option2Button.Text = "";
+                    break;
+                case 8:
                     outputLabel.Text = "You just boarded GO Transit. Which direction?";
                     option1Button.Text = "Westbound towards London";
                     option2Button.Text = "Eastbound towards Toronto";
@@ -110,11 +149,8 @@ namespace AdventureProject
                     SoundPlayer player3 = new SoundPlayer(Properties.Resources.Horn);
                     player3.Play();
                     break;
-                case 7:
-                    outputLabel.Text = "You made it to your destination. Return trip?";
-                    option1Button.Text = "Yes";
-                    option2Button.Text = "No";
-                    break;
+                
+                
                 case 99:
                     outputLabel.Text = "Thank you for playing. Play again?";
                     option1Button.Text = "Yes";
